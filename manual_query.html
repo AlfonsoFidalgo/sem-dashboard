@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Query Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="js/qr.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/sendAndDraw.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1>Query your data!</h1>
+      <a href="dashboard.html">Back to dashboard</a>
+      <h3>Metrics columns:</h3>
+      <p>G: Impressions, H: Clicks, I: Cost, J: Conversions, K: Position (weighted)</p>
+      <h3>Dimensions columns:</h3>
+      <p>A: Week, B: Device, C: Top vs. Other, D: Category, E: Language, F: Market, L: Match type</p>
+      <h3>Example:</h3>
+      <p>SELECT D, sum(J) GROUP BY D</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <form action="">
+        Enter your query: <br>
+        <input type="text" onInput="sendAndDraw(this.value)">
+      </form>
+      <br />
+      <div id="orgchart"></div>
+    </div>
+  </div>
+</body>
+</html>
