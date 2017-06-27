@@ -69,8 +69,7 @@ QueryWrapper.prototype.handleErrorResponse = function(response) {
   var message = response.getMessage();
   var detailedMessage = response.getDetailedMessage();
   if (this.errorContainer) {
-    google.visualization.errors.addError(this.errorContainer,
-        message, detailedMessage, {'showInTooltip': false});
+    //google.visualization.errors.addError(this.errorContainer, message, detailedMessage, {'showInTooltip': false});
   } else {
     throw Error(message + ' ' + detailedMessage);
   }

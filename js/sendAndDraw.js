@@ -5,10 +5,10 @@ var dataSourceUrl = 'https://docs.google.com/spreadsheets/d/1Mw9VkPaciMng7HMmVTa
 var query;
 
 function sendAndDraw(queryString) {
-  var container = document.getElementById('orgchart');
+  var container = document.getElementById('qResult');
   var chart = new google.visualization.Table(container);
   query && query.abort();
   query = new google.visualization.Query(dataSourceUrl + queryString);
-  var queryWrapper = new QueryWrapper(query, chart, {'page': 'enable', 'pageSize': 15}, container);
+  var queryWrapper = new QueryWrapper(query, chart, {'page': 'enable', 'pageSize': 50}, container);
   queryWrapper.sendAndDraw();
 }
