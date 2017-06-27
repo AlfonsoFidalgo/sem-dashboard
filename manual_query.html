@@ -13,20 +13,33 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="jumbotron">
-      <h1>Query your data!</h1>
-      <a href="dashboard.html">Back to dashboard</a>
-      <h3>Metrics columns:</h3>
-      <p>G: Impressions, H: Clicks, I: Cost, J: Conversions, K: Position (weighted)</p>
-      <h3>Dimensions columns:</h3>
-      <p>A: Week, B: Device, C: Top vs. Other, D: Category, E: Language, F: Market, L: Match type</p>
-      <h3>Example:</h3>
-      <p>SELECT D, sum(J) GROUP BY D</p>
-    </div>
-    </div>
-  </div>
+  <div class="container">
+    <!-- <div class="jumbotron"> -->
+    <h1>Query your data!</h1>
+    <a href="dashboard.html">Back to dashboard</a>
+    <a href="dashboard_qs.html">Quality Score</a>
 
+    <div class="well">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Metrics columns:</h3>
+          <p>G: Impressions, H: Clicks, I: Cost, J: Conversions, K: Position (weighted)</p>
+        </div>
+
+        <div class="col-md-4">
+          <h3>Dimensions columns:</h3>
+          <p>A: Week, B: Device, C: Top vs. Other, D: Category, E: Language, F: Market, L: Match type</p>
+        </div>
+
+        <div class="col-md-4">
+          <h3>Example:</h3>
+          <p>SELECT D, sum(J) GROUP BY D</p>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </div>
+  <hr>
   <div class="container">
     <div class="row">
       <form action="">

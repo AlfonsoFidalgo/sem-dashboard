@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>SEM Dashboard</title>
+    <title>Quality Score</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,9 +12,9 @@
   <body>
     <div class="container">
       <!-- <div class="jumbotron"> -->
-      <h1>SEM dashboard</h1>
+      <h1>Quality Score</h1>
       <a href="manual_query.html">Write your own query</a>
-      <a href="dashboard_qs.html">Quality Score</a>
+      <a href="dashboard.html">Back to dashboard</a>
       <br>
       <!-- </div> -->
     </div>
@@ -22,14 +22,15 @@
     <div class="container" id="dashboard-div">
       <div class="well">
         <div class="row">
-          <div class="col-md-6">
-              <div id="filter_div"></div>
+          <div class="col-md-4">
+            <div id="filter_device"></div>
           </div>
-          <div class="col-md-6">
-            <div id="filter_divB"></div>
-            <div id="filter_divC"></div>
-            <div id="filter_divD"></div>
-            <div id="filter_divE"></div>
+          <div class="col-md-4">
+            <div id="filter_market"></div>
+          </div>
+          <div class="col-md-4">
+            <div id="filter_slot"></div>
+          </div>
           </div>
         </div>
       </div>
@@ -50,7 +51,7 @@
           <div id="chart4"></div>
         </div>
       </div>
-    </div>
-    <script type="text/javascript" src="js/dashboard.js"></script>
+
+    <script type="text/javascript" src="js/dashboard_qs.js"></script>
   </body>
 </html>
