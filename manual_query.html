@@ -10,15 +10,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/sendAndDraw.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="dashboard.html">SEM Dashboard</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="dashboard_qs.html">Quality Score</a></li>
+          <li><a href="manual_query.html">Query Tool</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+
   <div class="container">
-    <!-- <div class="jumbotron"> -->
-    <h1>Query your data!</h1>
-    <a href="dashboard.html" class="btn btn-default">Back to dashboard</a>
-    <a href="dashboard_qs.html" class="btn btn-default">Quality Score</a>
-    <br><br>
     <div class="well">
       <div class="row">
         <div class="col-md-4">
@@ -37,9 +53,8 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
   </div>
-  <hr>
+
   <div class="container">
     <div class="row">
       <form action="">
@@ -50,5 +65,7 @@
       <div id="qResult"></div>
     </div>
   </div>
+
+
 </body>
 </html>

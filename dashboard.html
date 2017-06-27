@@ -8,17 +8,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
-      <!-- <div class="jumbotron"> -->
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="dashboard.html">SEM Dashboard</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="dashboard_qs.html">Quality Score</a></li>
+            <li><a href="manual_query.html">Query Tool</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <!-- <div class="container">
       <h1>SEM dashboard</h1>
       <a href="manual_query.html" class="btn btn-default">Write your own query</a>
       <a href="dashboard_qs.html" class="btn btn-default">Quality Score</a>
       <br>
-      <!-- </div> -->
     </div>
-    <hr>
+    <hr> -->
     <div class="container" id="dashboard-div">
       <div class="well">
         <div class="row">
@@ -51,6 +70,9 @@
         </div>
       </div>
     </div>
+
+
+
     <script type="text/javascript" src="js/dashboard.js"></script>
   </body>
 </html>

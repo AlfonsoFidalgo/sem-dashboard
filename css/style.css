@@ -1,0 +1,27 @@
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.well{
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.bg-4 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+
+.google-visualization-controls-categoryfilter .google-visualization-controls-label {
+  width: 100px;
+  padding: 0
+}
