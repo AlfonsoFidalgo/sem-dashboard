@@ -60,7 +60,7 @@ function handleSampleDataQueryResponse(response) {
     'containerId': 'chart1',
     'options': {
       //'height': 300,
-      'legend': 'bottom',
+      'legend': 'none',
       'title': 'Quality Score & CPA',
       'series': {
         0: {targetAxisIndex: 0, labelInLegend: "Quality Score"},
@@ -79,7 +79,7 @@ function handleSampleDataQueryResponse(response) {
     'containerId': 'chart2',
     'options': {
       //'height': 400,
-      'legend': 'bottom',
+      'legend': 'none',
       'title': 'Quality Score & Conversions',
       'series': {
         0: {targetAxisIndex: 0, labelInLegend: "Quality Score"},
@@ -98,7 +98,7 @@ function handleSampleDataQueryResponse(response) {
     'containerId': 'chart3',
     'options': {
       //'height': 400,
-      'legend': 'bottom',
+      'legend': 'none',
       'title': 'Quality Score & Cost',
       'series': {
         0: {targetAxisIndex: 0, labelInLegend: "Quality Score"},
@@ -117,7 +117,7 @@ function handleSampleDataQueryResponse(response) {
     'containerId': 'chart4',
     'options': {
       //'height': 400,
-      'legend': 'bottom',
+      'legend': 'none',
       'title': 'Quality Score & CPC',
       'series': {
         0: {targetAxisIndex: 0, labelInLegend: "Quality Score"},
