@@ -31,13 +31,7 @@
       </div>
     </nav>
     <br>
-    <!-- <div class="container">
-      <h1>SEM dashboard</h1>
-      <a href="manual_query.html" class="btn btn-default">Write your own query</a>
-      <a href="dashboard_qs.html" class="btn btn-default">Quality Score</a>
-      <br>
-    </div>
-    <hr> -->
+
     <div class="container" id="dashboard-div">
       <div class="well">
         <div class="row">
@@ -70,9 +64,25 @@
         </div>
       </div>
     </div>
+    <br><br> <hr>
+    <div class="container" id="dashboard2">
+      <!-- impressions, clicks, conversions pie charts -->
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10"><div id="tableWeekBefore"></div></div>
+        <div class="col-md-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10"><div id="tableLastWeek"></div></div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
 
 
-
+    <script type="text/javascript" src="js/moment.js"></script>
     <script type="text/javascript" src="js/dashboard.js"></script>
+    <script type="text/javascript" src="js/dashboard2.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@ google.charts.setOnLoadCallback(drawSheetName);
 
 //query spreadsheet, executed OnLoad
 function drawSheetName() {
-  var queryString = encodeURIComponent("SELECT A, B, sum(J), sum(I)/sum(J), sum(I), sum(K)/sum(G), sum(I)/sum(H), sum(H)/sum(G), sum(J)/sum(H), sum(H), D, L, C GROUP BY A, B, D, L, C");
+  var queryString = encodeURIComponent("SELECT A, B, sum(J), sum(I)/sum(J), sum(I), sum(K)/sum(G), sum(I)/sum(H), sum(H)/sum(G), sum(J)/sum(H), sum(H), D, E, F GROUP BY A, B, D, E, F");
 
   var query = new google.visualization.Query(
       'https://docs.google.com/spreadsheets/d/1Mw9VkPaciMng7HMmVTa-s7nmIpqdpzyNWsorX7xyJnE/gviz/tq?sheet=Sheet1&headers=1&tq=' + queryString);
@@ -52,24 +52,24 @@ function handleSampleDataQueryResponse(response) {
     'state': {'selectedValues': ['Computers']}
   });
 
-  var mtFilter = new google.visualization.ControlWrapper({
+  var languageFilter = new google.visualization.ControlWrapper({
     'controlType': 'CategoryFilter',
     'containerId': 'filter_divD',
     'options': {
-      'filterColumnLabel': 'Match Type',
+      'filterColumnLabel': 'language',
       'ui': {'allowMultiple': false}
     },
-    'state': {'selectedValues': ['Broad']}
+    'state': {'selectedValues': ['EN']}
   });
 
-  var slotFilter = new google.visualization.ControlWrapper({
+  var marketFilter = new google.visualization.ControlWrapper({
     'controlType': 'CategoryFilter',
     'containerId': 'filter_divE',
     'options': {
-      'filterColumnLabel': 'Top vs. Other',
+      'filterColumnLabel': 'market',
       'ui': {'allowMultiple': false}
     },
-    'state': {'selectedValues': ['Top']}
+    'state': {'selectedValues': ['US']}
   });
 
 //Create all the charts
@@ -150,6 +150,6 @@ function handleSampleDataQueryResponse(response) {
   });
 
 //Bind and draw
-  dashboard.bind([rangeSlider, devFilter, catFilter, mtFilter, slotFilter], [lineChart, lineChart2, lineChart3, lineChart4]);
+  dashboard.bind([rangeSlider, devFilter, catFilter, languageFilter, marketFilter], [lineChart, lineChart2, lineChart3, lineChart4]);
   dashboard.draw(data);
 };
