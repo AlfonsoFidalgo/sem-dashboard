@@ -47,7 +47,7 @@ function handleLastWeek(response){
   };
   var data = response.getDataTable();
   var table = new google.visualization.Table(document.getElementById('tableLastWeek'));
-  table.draw(data);
+  table.draw(data, {width: '100%'});
   queryWeekBefore();
 };
 
@@ -58,5 +58,5 @@ function handleWeekBefore(response){
   };
   var data = response.getDataTable();
   var table = new google.visualization.Table(document.getElementById('tableWeekBefore'));
-  table.draw(data);
+  table.draw(data, {width: '100%'});
 };
